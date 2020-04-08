@@ -4,7 +4,7 @@
   "description": "Github action to send notifications to slack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "package": "ncc build index.js -o dist"
   },
   "repository": {
     "type": "git",
@@ -14,5 +14,12 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/amansson/slack-notification-action/issues"
-  }  
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "@slack/webhook": "^5.0.3"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.1"
+  }
 }
