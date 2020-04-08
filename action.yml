@@ -1,0 +1,9 @@
+name: 'slack-notification-action'
+description: 'Github action to send notifications to slack'
+author: amansson
+inputs:
+  payload:
+    description: payload to send to slack webhook
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
