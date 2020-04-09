@@ -19,9 +19,9 @@ First you will need to create a github workflow file.
 
 - Press the Actions tab in github: **Your Repo/actions**
 - Create a new **yaml file**
-- Different actions can be used such as:
+- Different requests can be used such as:
 ```yaml
-on: [push, pull_request]
+on: [pull, push, pull_request]
 ```
 - You will need to build the action, support exist for Win, Mac, Linux
 ```yaml
